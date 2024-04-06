@@ -1,21 +1,32 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@font-face {
+  font-family: Lato-Thin;
+  src: url(./assets/Lato/Lato-Thin.ttf);
+  /*  */
+}
 
+@font-face {
+  font-family: Lato-Light;
+  src: url(./assets/Lato/Lato-Light.ttf);
+  /*  */
+}
+
+:root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
+
   text-rendering: optimizeLegibility;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #fbfbfb;
   text-decoration: inherit;
 }
 a:hover {
@@ -26,13 +37,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background-color: black;
+  color: white;
+  font-family: "Lato-Light";
 }
 
 button {
@@ -41,7 +49,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: "Lato-Thin";
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -52,6 +60,199 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+header {
+  font-size: 3.2em;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/*  ID hash tags elements */
+#about {
+  position: fixed;
+  top: 50%; /* Position the top edge of the element at the vertical center */
+  left: 50%; /* Position the left edge of the element at the horizontal center */
+  width: 50%;
+  height: fit-content;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back by half of its own width and height */
+
+  background-color: rgb(27, 31, 34);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-family: "Lato-Light";
+  text-align: left;
+  padding: 20px;
+  z-index: -5;
+}
+#contact {
+  position: fixed;
+  top: 50%; /* Position the top edge of the element at the vertical center */
+  left: 50%; /* Position the left edge of the element at the horizontal center */
+  width: 50%;
+  height: fit-content;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back by half of its own width and height */
+
+  background-color: rgb(27, 31, 34);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-family: "Lato-Light";
+  text-align: left;
+  padding: 20px;
+  z-index: -5;
+}
+
+#intro {
+  position: fixed;
+  top: 50%; /* Position the top edge of the element at the vertical center */
+  left: 50%; /* Position the left edge of the element at the horizontal center */
+  width: 50%;
+  height: fit-content;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back by half of its own width and height */
+
+  background-color: rgb(27, 31, 34);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-family: "Lato-Light";
+  text-align: left;
+  padding: 20px;
+  z-index: -5;
+}
+#simulations {
+  position: fixed;
+  top: 50%; /* Position the top edge of the element at the vertical center */
+  left: 50%; /* Position the left edge of the element at the horizontal center */
+  width: 50%;
+  height: fit-content;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back by half of its own width and height */
+
+  background-color: rgb(27, 31, 34);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-family: "Lato-Light";
+  text-align: left;
+  padding: 20px;
+  z-index: -5;
+}
+#work {
+  position: fixed;
+  top: 50%; /* Position the top edge of the element at the vertical center */
+  left: 50%; /* Position the left edge of the element at the horizontal center */
+  width: 50%;
+  height: fit-content;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the element back by half of its own width and height */
+
+  background-color: rgb(27, 31, 34);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  font-family: "Lato-Light";
+  text-align: left;
+  padding: 20px;
+  z-index: -5;
+}
+
+/* Classes */
+
+.CcanvasDiv {
+  opacity: 1;
+  font-family: "Lato-Thin";
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.close_X {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+  width: 10%;
+  height: 10%;
+  text-align: center;
+
+  background-color: rgba(27, 31, 34);
+  color: white;
+}
+.navDiv {
+  font-family: "Lato-Light";
+}
+
+/* .navDiv > a{
+  color: white
+} */
+.navDiv > ul,
+li {
+  display: inline-block;
+  font-size: 0.3em;
+  border: 0.5px solid rgb(252, 252, 252);
+  padding-top: 0.35rem;
+  padding-left: 2.45rem;
+  padding-right: 2.45rem;
+  padding-bottom: 0.55rem;
+}
+li:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.new-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
+  opacity: 0;
+  font-family: "Lato-thin";
+  font-size: 3.2em;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  font-family: "Lato-Thin";
+  height: 100vh;
+  width: 100vw;
+}
+
+.penultimate-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: top; /* center vertically */
+  justify-content: center; /* center horizontally */
+  opacity: 0;
+  font-family: "Lato-Thin";
+  font-size: 5.2em;
+  height: 100vh;
+  width: 100vw;
+  z-index: inherit;
 }
 
 @media (prefers-color-scheme: light) {
